@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>WebElites - Bootstrap</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navigation navbar-expand-lg w-75 m-auto navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand  fw-bolder fs-3  " href="index.html"><img src="logo2.png" height="80" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100 " id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 w-100 justify-content-end mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active hover text-white" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover text-white " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  hover text-white dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Topics
+              </a>
+              <ul class="dropdown-menu " style="background:#0E2A47;" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item  text-primary" href="htmlpage.html">HTML</a></li>
+                <li><a class="dropdown-item text-primary" href="csspage.html">CSS</a></li>
+                <li><a class="dropdown-item text-primary" href="jspage.html">Javascript</a></li>
+                <li><a class="dropdown-item text-primary" href="bootstrappage.html">Bootstrap</a></li>
+               
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white hover" href="contact.html">Contact Us</a>
+            </li>
+            
+            <li class="nav-item">
+              <a  data-bs-toggle="modal" data-bs-target="#loginModal" class="nav-link text-white hover" href="" >Login</a>
+            </li>
+
+            <li class="nav-item">
+              <a  data-bs-toggle="modal" data-bs-target="#SignupModal" class="nav-link text-white hover" href="" >Sign-up</a>
+            </li>
+          
+            <!-- login modal -->
+          <div class="modal fade "  id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" >
+              <div class="modal-content" style="background-color:#0E2A47;">
+                <div class="modal-header">
+                  <h5 class="modal-title text-primary" id="loginModalLabel">Login to WebElites</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+           <!-- Signup Modal -->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"  style="background-color:#0E2A47;">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary" id="SignupModalLabel">Create Account On WebElites</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="cexampleInputPassword1" class="form-label">ConfirmPassword</label>
+      <input type="password" class="form-control" id="cexampleInputPassword1">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Create account</button>
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-Primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <main >
+
+    <div class="px-md-2 px-0 py-5 my-5 w-100 text-center  bootstrappic">
+      <div class="col-lg-6 mx-auto mt-3">  
+        <image  src="bootstrapicon.svg" alt="bootstrap icon" width="300"/>
+      </div>
+    </div>
+    <div class="container-fluid " style="max-width:100%;min-height:70vh; background:#673AB7;">
+      <div class="heading text-center px-md-3 pt-5 mx-auto border-bottom border-danger  w-50">
+        <h1 class="fw-bolder display-4 mx-auto">Bootstrap</h1>
+      </div>
+      <div class="content mx-auto   p-md-1 p-1 " style="max-width:100%; margin:0 auto">
+        <div class="left col-8  mx-auto my-3 m-1"> <img src="./bootstrap.jpg" alt="" width="100%"> </div>
+        <div class="right fs-5 col-8 mx-auto p-1 mb-5">
+          If you’re creating a website for your business, then you probably have a long wish list.
+<br><br>
+You want the design to reflect the look and feel of your brand. You want to have the functionality required to meet the needs of your visitors without going over budget. And you want to create responsive layouts that display elements like buttons and forms consistently, no matter what device or browser the visitor is using.
+<br><br>
+By building with Bootstrap, you can check that last item off your list. Bootstrap is an open-source framework for quickly building responsive websites and mobile-first web projects. Because it offers a collection of reusable code, you won’t have to build a site from scratch. 
+<br><br>
+<div class="definition bg-dark fs-5 p-2">
+Bootstrap CSS is the leading CSS framework for developing responsive and mobile-first websites. This free and open-source toolkit comes with a responsive grid system, global CSS settings, extensive pre-built components including buttons, navbars, and forms, and optional JavaScript plugins to speed up the development process.
+Though Bootstrap is an open-source toolkit for developing with HTML, CSS, and JavaScript, it is often referred to as a CSS framework.</div>
+<br><br>
+To understand why, you must first understand that CSS is generally easier to learn for people at all levels of technical experience and is faster in browsers than JavaScript. For these reasons, Bootstrap developers wrote in CSS (and HTML) over JavaScript whenever possible. The CSS library included in Bootstrap is therefore much larger than the JavaScript library.
+<br><br>
+Since Bootstrap makes it easier and faster to create responsive websites, it appeals to many front-end developers and beginners in particular. However, it’s not recommended by all. Below we’ll look at why Bootstrap is so popular and when it’s ideal to use — and when it’s not ideal. 
+<br><br>
+Bootstrap is the go-to toolkit for many front-end developers. According to W3Techs, it's used by 22.1% of all websites on the internet. 
+<br><br>
+There are a few factors driving Bootstrap’s popularity. First and foremost, it’s open-source and therefore free to download and use. It’s also fully customizable, and compatible with all modern browsers. This is true of many CSS frameworks, however. 
+<br><br>
+What sets Bootstrap apart from other development toolkits is that it was developed mobile-first. Meaning, the code was optimized for mobile devices (i.e. the smallest screen size) first and then scaled up to display on larger screens. As a result, building with Bootstrap CSS ensures that your site supports proper rendering and touch zooming for all devices.
+<br><br>
+Another reason Bootstrap is so popular is that it’s easy to use. It comes bundled with templates for typography, forms, buttons, drop-down menus, navigation, and other interface components. Using these pre-styled templates, you can add features that enrich the user experience on your site without having to code them from scratch.
+        </div>
+      </div>
+    </div>
+     
+  </main>
+
+
+  <!-- footer -->
+ <!-- footer -->
+ <footer class="pt-4  p-md-5">
+  <div class="row">
+   
+    <div class="col-6 col-md-2">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="index.html">Home</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">About Us</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="contact.html">Contact Us</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Support us</a></li>        </div>
+    <div class="col-6 col-md-2">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.W3Schools.com">W3Schools</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.youtube.com">Youtube</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.html.com">HTML</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.tutorialspoint.com">Tutorials Point</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-3">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">Team</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-8 col-md-5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.0654296076443!2d86.13339449123092!3d22.79761453566654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4e282a14223%3A0x32402bfcb5217629!2sAdityapur%20Auto%20Cluster!5e0!3m2!1sen!2sin!4v1630593067597!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+  </div>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© 2021 WebElites, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><img src="instagram.svg" height="30px" width="30px" alt="instagram"/></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img src="facebook.svg" height="30px" width="30px" alt="instagram"/></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><img src="github.svg" height="30px" width="30px" alt="instagram"/></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    <script src="scroll.js"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
